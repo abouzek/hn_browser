@@ -1,0 +1,425 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		09EDB4011BFBBBBD0070E1D3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09EDB4001BFBBBBD0070E1D3 /* AppDelegate.swift */; };
+		09EDB4061BFBBBBD0070E1D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09EDB4041BFBBBBD0070E1D3 /* Main.storyboard */; };
+		09EDB4081BFBBBBD0070E1D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09EDB4071BFBBBBD0070E1D3 /* Assets.xcassets */; };
+		09EDB40B1BFBBBBD0070E1D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09EDB4091BFBBBBD0070E1D3 /* LaunchScreen.storyboard */; };
+		09EDB4151BFBBF1A0070E1D3 /* HNBMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09EDB4141BFBBF1A0070E1D3 /* HNBMainViewController.swift */; };
+		09EDB41B1BFBC88C0070E1D3 /* HNBModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09EDB41A1BFBC88C0070E1D3 /* HNBModel.swift */; };
+		09EDB41D1BFBCB6C0070E1D3 /* HNBItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09EDB41C1BFBCB6C0070E1D3 /* HNBItem.swift */; };
+		09EDB4201BFBD1A20070E1D3 /* HNBNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09EDB41F1BFBD1A20070E1D3 /* HNBNetwork.swift */; };
+		09EDB4241BFBFC950070E1D3 /* HNBWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09EDB4231BFBFC950070E1D3 /* HNBWebViewController.swift */; };
+		58324F06D6A8E580FFF75C05 /* Pods_HNBrowser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B8A0F13D36095763DD82AEB /* Pods_HNBrowser.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		09EDB3FD1BFBBBBD0070E1D3 /* HNBrowser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HNBrowser.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		09EDB4001BFBBBBD0070E1D3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		09EDB4051BFBBBBD0070E1D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		09EDB4071BFBBBBD0070E1D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		09EDB40A1BFBBBBD0070E1D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		09EDB40C1BFBBBBD0070E1D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		09EDB4141BFBBF1A0070E1D3 /* HNBMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HNBMainViewController.swift; sourceTree = "<group>"; };
+		09EDB41A1BFBC88C0070E1D3 /* HNBModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HNBModel.swift; sourceTree = "<group>"; };
+		09EDB41C1BFBCB6C0070E1D3 /* HNBItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HNBItem.swift; sourceTree = "<group>"; };
+		09EDB41F1BFBD1A20070E1D3 /* HNBNetwork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HNBNetwork.swift; sourceTree = "<group>"; };
+		09EDB4231BFBFC950070E1D3 /* HNBWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HNBWebViewController.swift; sourceTree = "<group>"; };
+		3B8A0F13D36095763DD82AEB /* Pods_HNBrowser.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HNBrowser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		693765BC8D98A60FBD8FEC6F /* Pods-HNBrowser.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HNBrowser.release.xcconfig"; path = "Pods/Target Support Files/Pods-HNBrowser/Pods-HNBrowser.release.xcconfig"; sourceTree = "<group>"; };
+		CF8E7924FD6AE96A6B329656 /* Pods-HNBrowser.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HNBrowser.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HNBrowser/Pods-HNBrowser.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		09EDB3FA1BFBBBBD0070E1D3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58324F06D6A8E580FFF75C05 /* Pods_HNBrowser.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		09EDB3F41BFBBBBD0070E1D3 = {
+			isa = PBXGroup;
+			children = (
+				09EDB3FF1BFBBBBD0070E1D3 /* HNBrowser */,
+				09EDB3FE1BFBBBBD0070E1D3 /* Products */,
+				43F3427EF3A32BB7615DB42C /* Frameworks */,
+				8152E0E1BFCC55CEB1CF2E44 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		09EDB3FE1BFBBBBD0070E1D3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				09EDB3FD1BFBBBBD0070E1D3 /* HNBrowser.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		09EDB3FF1BFBBBBD0070E1D3 /* HNBrowser */ = {
+			isa = PBXGroup;
+			children = (
+				09EDB4001BFBBBBD0070E1D3 /* AppDelegate.swift */,
+				09EDB4181BFBBF5B0070E1D3 /* Assets */,
+				09EDB40C1BFBBBBD0070E1D3 /* Info.plist */,
+				09EDB4191BFBC8580070E1D3 /* Models */,
+				09EDB41E1BFBD1890070E1D3 /* Network */,
+				09EDB4171BFBBF4C0070E1D3 /* Storyboards */,
+				09EDB4161BFBBF400070E1D3 /* View Controllers */,
+			);
+			path = HNBrowser;
+			sourceTree = "<group>";
+		};
+		09EDB4161BFBBF400070E1D3 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				09EDB4231BFBFC950070E1D3 /* HNBWebViewController.swift */,
+				09EDB4141BFBBF1A0070E1D3 /* HNBMainViewController.swift */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		09EDB4171BFBBF4C0070E1D3 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				09EDB4091BFBBBBD0070E1D3 /* LaunchScreen.storyboard */,
+				09EDB4041BFBBBBD0070E1D3 /* Main.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		09EDB4181BFBBF5B0070E1D3 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				09EDB4071BFBBBBD0070E1D3 /* Assets.xcassets */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
+		09EDB4191BFBC8580070E1D3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				09EDB41A1BFBC88C0070E1D3 /* HNBModel.swift */,
+				09EDB41C1BFBCB6C0070E1D3 /* HNBItem.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		09EDB41E1BFBD1890070E1D3 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				09EDB41F1BFBD1A20070E1D3 /* HNBNetwork.swift */,
+			);
+			name = Network;
+			sourceTree = "<group>";
+		};
+		43F3427EF3A32BB7615DB42C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3B8A0F13D36095763DD82AEB /* Pods_HNBrowser.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8152E0E1BFCC55CEB1CF2E44 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CF8E7924FD6AE96A6B329656 /* Pods-HNBrowser.debug.xcconfig */,
+				693765BC8D98A60FBD8FEC6F /* Pods-HNBrowser.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		09EDB3FC1BFBBBBD0070E1D3 /* HNBrowser */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 09EDB40F1BFBBBBD0070E1D3 /* Build configuration list for PBXNativeTarget "HNBrowser" */;
+			buildPhases = (
+				8F6015922B43C35A18DC659C /* Check Pods Manifest.lock */,
+				09EDB3F91BFBBBBD0070E1D3 /* Sources */,
+				09EDB3FA1BFBBBBD0070E1D3 /* Frameworks */,
+				09EDB3FB1BFBBBBD0070E1D3 /* Resources */,
+				FCF53D637AF8FD7741DF8EFA /* Embed Pods Frameworks */,
+				B0FD935A25A7FE0E49D2EAFA /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HNBrowser;
+			productName = HNBrowser;
+			productReference = 09EDB3FD1BFBBBBD0070E1D3 /* HNBrowser.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		09EDB3F51BFBBBBD0070E1D3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = abouzek;
+				TargetAttributes = {
+					09EDB3FC1BFBBBBD0070E1D3 = {
+						CreatedOnToolsVersion = 7.1;
+					};
+				};
+			};
+			buildConfigurationList = 09EDB3F81BFBBBBD0070E1D3 /* Build configuration list for PBXProject "HNBrowser" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 09EDB3F41BFBBBBD0070E1D3;
+			productRefGroup = 09EDB3FE1BFBBBBD0070E1D3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				09EDB3FC1BFBBBBD0070E1D3 /* HNBrowser */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		09EDB3FB1BFBBBBD0070E1D3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09EDB40B1BFBBBBD0070E1D3 /* LaunchScreen.storyboard in Resources */,
+				09EDB4081BFBBBBD0070E1D3 /* Assets.xcassets in Resources */,
+				09EDB4061BFBBBBD0070E1D3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8F6015922B43C35A18DC659C /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B0FD935A25A7FE0E49D2EAFA /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HNBrowser/Pods-HNBrowser-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FCF53D637AF8FD7741DF8EFA /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HNBrowser/Pods-HNBrowser-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		09EDB3F91BFBBBBD0070E1D3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09EDB4151BFBBF1A0070E1D3 /* HNBMainViewController.swift in Sources */,
+				09EDB4201BFBD1A20070E1D3 /* HNBNetwork.swift in Sources */,
+				09EDB4241BFBFC950070E1D3 /* HNBWebViewController.swift in Sources */,
+				09EDB41B1BFBC88C0070E1D3 /* HNBModel.swift in Sources */,
+				09EDB4011BFBBBBD0070E1D3 /* AppDelegate.swift in Sources */,
+				09EDB41D1BFBCB6C0070E1D3 /* HNBItem.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		09EDB4041BFBBBBD0070E1D3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				09EDB4051BFBBBBD0070E1D3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		09EDB4091BFBBBBD0070E1D3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				09EDB40A1BFBBBBD0070E1D3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		09EDB40D1BFBBBBD0070E1D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		09EDB40E1BFBBBBD0070E1D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		09EDB4101BFBBBBD0070E1D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF8E7924FD6AE96A6B329656 /* Pods-HNBrowser.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = HNBrowser/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.abouzek.HNBrowser;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		09EDB4111BFBBBBD0070E1D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 693765BC8D98A60FBD8FEC6F /* Pods-HNBrowser.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = HNBrowser/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.abouzek.HNBrowser;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		09EDB3F81BFBBBBD0070E1D3 /* Build configuration list for PBXProject "HNBrowser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09EDB40D1BFBBBBD0070E1D3 /* Debug */,
+				09EDB40E1BFBBBBD0070E1D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		09EDB40F1BFBBBBD0070E1D3 /* Build configuration list for PBXNativeTarget "HNBrowser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09EDB4101BFBBBBD0070E1D3 /* Debug */,
+				09EDB4111BFBBBBD0070E1D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 09EDB3F51BFBBBBD0070E1D3 /* Project object */;
+}

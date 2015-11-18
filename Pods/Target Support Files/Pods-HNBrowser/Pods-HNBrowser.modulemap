@@ -1,0 +1,6 @@
+framework module Pods_HNBrowser {
+  umbrella header "Pods-HNBrowser-umbrella.h"
+
+  export *
+  module * { export * }
+}
