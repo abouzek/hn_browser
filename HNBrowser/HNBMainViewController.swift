@@ -11,6 +11,7 @@ import UIKit
 class HNBMainViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
+    private var refreshControl: UIRefreshControl!
     private var stories: [HNBItem] = []
 
     override func viewDidLoad() {
@@ -19,11 +20,24 @@ class HNBMainViewController: UIViewController {
         self.navigationItem.title = "Top Stories"
         self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .Plain, target: nil, action: nil)
         
+        self.refreshControl = UIRefreshControl()
+        self.refreshControl.attributedTitle = NSAttributedString(string: "Pull to refresh")
+        self.refreshControl.addTarget(self, action: "refresh", forControlEvents: .ValueChanged)
+        self.tableView.addSubview(self.refreshControl)
+        
         self.tableView.delegate = self;
         self.tableView.dataSource = self;
-        
+        self.tableView.rowHeight = UITableViewAutomaticDimension
+        self.tableView.estimatedRowHeight = 44
+        self.tableView.registerNib(UINib(nibName: HNBStoryTableViewCell.nibName, bundle: nil), forCellReuseIdentifier: HNBStoryTableViewCell.nibName)
+
+        self.refresh()
+    }
+    
+    func refresh() {
         HNBNetwork.fetchTopStories(15) { items in
             self.stories = items
+            self.refreshControl.endRefreshing()
             self.tableView.reloadData()
         }
     }
@@ -34,7 +48,7 @@ extension HNBMainViewController: UITableViewDelegate {
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         let story = self.stories[indexPath.row]
-        if let urlString = story.url, url = NSURL(string: urlString), storyboard = self.storyboard {
+        if let url = NSURL(string: story.url), storyboard = self.storyboard {
             
             let webViewController = storyboard.instantiateViewControllerWithIdentifier(HNBWebViewController.storyboardIdentifier) as! HNBWebViewController
             webViewController.url = url
@@ -55,21 +69,9 @@ extension HNBMainViewController: UITableViewDelegate {
 extension HNBMainViewController: UITableViewDataSource {
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = UITableViewCell(style: UITableViewCellStyle.Subtitle, reuseIdentifier: "cell")
-        
-        var cellTitle = ""
+        let cell = tableView.dequeueReusableCellWithIdentifier(HNBStoryTableViewCell.nibName) as! HNBStoryTableViewCell
         let story = self.stories[indexPath.row]
-        if let title = story.title {
-            cellTitle = title
-        }
-        cell.textLabel!.text = cellTitle
-        
-        var cellSubtitle = ""
-        if let score = story.score, by = story.by {
-            cellSubtitle = "\(score) points by \(by) | \(story.kids.count) comments"
-        }
-        cell.detailTextLabel!.text = cellSubtitle
-        
+        cell.styleForStory(story)
         return cell;
     }
     

@@ -22,18 +22,18 @@ class HNBItem: HNBModel {
         return nil
     }
     
-    var type: String? {
+    var type: String {
         if let type = self.dict["type"] as? String {
             return type
         }
-        return nil
+        return ""
     }
     
-    var by: String? {
+    var by: String {
         if let by = self.dict["by"] as? String {
             return by
         }
-        return nil
+        return ""
     }
     
     var time: NSTimeInterval? {
@@ -50,11 +50,11 @@ class HNBItem: HNBModel {
         return nil
     }
     
-    var text: String? {
+    var text: String {
         if let text = self.dict["text"] as? String {
             return text
         }
-        return nil
+        return ""
     }
     
     var dead: Bool? {
@@ -78,11 +78,11 @@ class HNBItem: HNBModel {
         return []
     }
     
-    var url: String? {
+    var url: String {
         if let url = self.dict["url"] as? String {
             return url
         }
-        return nil
+        return ""
     }
     
     var score: Int? {
@@ -92,11 +92,11 @@ class HNBItem: HNBModel {
         return nil
     }
     
-    var title: String? {
+    var title: String {
         if let title = self.dict["title"] as? String {
             return title
         }
-        return nil
+        return ""
     }
     
     var parts: [Int] {

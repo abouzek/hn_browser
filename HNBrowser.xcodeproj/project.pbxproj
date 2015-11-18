@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		099A2E061BFCEBE000B21B1C /* HNBStoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099A2E041BFCEBE000B21B1C /* HNBStoryTableViewCell.swift */; };
+		099A2E071BFCEBE000B21B1C /* HNBStoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 099A2E051BFCEBE000B21B1C /* HNBStoryTableViewCell.xib */; };
 		09EDB4011BFBBBBD0070E1D3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09EDB4001BFBBBBD0070E1D3 /* AppDelegate.swift */; };
 		09EDB4061BFBBBBD0070E1D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09EDB4041BFBBBBD0070E1D3 /* Main.storyboard */; };
 		09EDB4081BFBBBBD0070E1D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09EDB4071BFBBBBD0070E1D3 /* Assets.xcassets */; };
@@ -20,6 +22,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		099A2E041BFCEBE000B21B1C /* HNBStoryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HNBStoryTableViewCell.swift; sourceTree = "<group>"; };
+		099A2E051BFCEBE000B21B1C /* HNBStoryTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HNBStoryTableViewCell.xib; sourceTree = "<group>"; };
 		09EDB3FD1BFBBBBD0070E1D3 /* HNBrowser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HNBrowser.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		09EDB4001BFBBBBD0070E1D3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		09EDB4051BFBBBBD0070E1D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -48,6 +52,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		099A2E081BFCEBEB00B21B1C /* Table View Cells */ = {
+			isa = PBXGroup;
+			children = (
+				099A2E041BFCEBE000B21B1C /* HNBStoryTableViewCell.swift */,
+				099A2E051BFCEBE000B21B1C /* HNBStoryTableViewCell.xib */,
+			);
+			name = "Table View Cells";
+			sourceTree = "<group>";
+		};
 		09EDB3F41BFBBBBD0070E1D3 = {
 			isa = PBXGroup;
 			children = (
@@ -75,6 +88,7 @@
 				09EDB4191BFBC8580070E1D3 /* Models */,
 				09EDB41E1BFBD1890070E1D3 /* Network */,
 				09EDB4171BFBBF4C0070E1D3 /* Storyboards */,
+				099A2E081BFCEBEB00B21B1C /* Table View Cells */,
 				09EDB4161BFBBF400070E1D3 /* View Controllers */,
 			);
 			path = HNBrowser;
@@ -203,6 +217,7 @@
 			files = (
 				09EDB40B1BFBBBBD0070E1D3 /* LaunchScreen.storyboard in Resources */,
 				09EDB4081BFBBBBD0070E1D3 /* Assets.xcassets in Resources */,
+				099A2E071BFCEBE000B21B1C /* HNBStoryTableViewCell.xib in Resources */,
 				09EDB4061BFBBBBD0070E1D3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -264,6 +279,7 @@
 			files = (
 				09EDB4151BFBBF1A0070E1D3 /* HNBMainViewController.swift in Sources */,
 				09EDB4201BFBD1A20070E1D3 /* HNBNetwork.swift in Sources */,
+				099A2E061BFCEBE000B21B1C /* HNBStoryTableViewCell.swift in Sources */,
 				09EDB4241BFBFC950070E1D3 /* HNBWebViewController.swift in Sources */,
 				09EDB41B1BFBC88C0070E1D3 /* HNBModel.swift in Sources */,
 				09EDB4011BFBBBBD0070E1D3 /* AppDelegate.swift in Sources */,
