@@ -21,6 +21,12 @@ class HNBBackButtonFlexibleHeightBar: HNBFlexibleHeightBar {
     internal var backButton: UIButton!
     
     internal override func setupWithTitle(title: String) {
+        self.minimumBarHeight = 50
+        self.backgroundColor = HNBConstants.HN_ORANGE
+        
+        self.behaviorDefiner = SquareCashStyleBehaviorDefiner()
+        self.behaviorDefiner = self.behaviorDefiner
+        
         self.setupLabelWithTitle(title)
         self.setupBackButton()
     }
@@ -43,9 +49,9 @@ class HNBBackButtonFlexibleHeightBar: HNBFlexibleHeightBar {
         self.label.addLayoutAttributes(initialLayoutAttributes, forProgress: 0)
         
         let finalLayoutAttributes = BLKFlexibleHeightBarSubviewLayoutAttributes(existingLayoutAttributes: initialLayoutAttributes)
-        finalLayoutAttributes.alpha = 0
-        let translation = CGAffineTransformMakeTranslation(0, -30)
-        let scale = CGAffineTransformMakeScale(0.2, 0.2)
+        finalLayoutAttributes.alpha = 1
+        let translation = CGAffineTransformMakeTranslation(-20, -12)
+        let scale = CGAffineTransformMakeScale(0.8, 0.8)
         finalLayoutAttributes.transform = CGAffineTransformConcat(scale, translation)
         self.label.addLayoutAttributes(finalLayoutAttributes, forProgress: 1)
     }
@@ -70,9 +76,9 @@ class HNBBackButtonFlexibleHeightBar: HNBFlexibleHeightBar {
         self.backButton.addLayoutAttributes(initialLayoutAttributes, forProgress: 0)
         
         let finalLayoutAttributes = BLKFlexibleHeightBarSubviewLayoutAttributes(existingLayoutAttributes: initialLayoutAttributes)
-        finalLayoutAttributes.alpha = 0
-        let translation = CGAffineTransformMakeTranslation(0, -30)
-        let scale = CGAffineTransformMakeScale(0.2, 0.2)
+        finalLayoutAttributes.alpha = 1
+        let translation = CGAffineTransformMakeTranslation(0, -12)
+        let scale = CGAffineTransformMakeScale(0.8, 0.8)
         finalLayoutAttributes.transform = CGAffineTransformConcat(scale, translation)
         self.backButton.addLayoutAttributes(finalLayoutAttributes, forProgress: 1)
     }

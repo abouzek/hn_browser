@@ -16,7 +16,6 @@ class HNBFlexibleHeightBar: BLKFlexibleHeightBar {
     
     init(title: String, frame: CGRect) {
         super.init(frame: frame)
-        self.sharedSetup()
         self.setupWithTitle(title)
     }
 
@@ -24,15 +23,13 @@ class HNBFlexibleHeightBar: BLKFlexibleHeightBar {
         fatalError("init(coder:) has not been implemented")
     }
     
-    private func sharedSetup() {
+    internal func setupWithTitle(title: String) {
         self.minimumBarHeight = 20
         self.backgroundColor = HNBConstants.HN_ORANGE
         
         self.behaviorDefiner = SquareCashStyleBehaviorDefiner()
         self.behaviorDefiner = self.behaviorDefiner
-    }
-    
-    internal func setupWithTitle(title: String) {
+        
         self.label = UILabel()
         self.label.text = title
         self.label.font = UIFont.systemFontOfSize(20)
