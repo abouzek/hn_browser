@@ -1,10 +1,13 @@
 PODS:
   - Alamofire (3.1.2)
+  - BLKFlexibleHeightBar (1.0.2)
 
 DEPENDENCIES:
   - Alamofire (~> 3.0)
+  - BLKFlexibleHeightBar
 
 SPEC CHECKSUMS:
   Alamofire: 7c16ca65f3c7e681fd925fd7f2dec7747ff96855
+  BLKFlexibleHeightBar: b27572a69633d8e33f1f2bbc486b04d8e86f742d
 
 COCOAPODS: 0.38.2

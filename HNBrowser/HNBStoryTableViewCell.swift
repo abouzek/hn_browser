@@ -8,6 +8,12 @@
 
 import UIKit
 
+protocol HNBStoryTableViewCellDelegate {
+    
+    func storyCellDidPressCommentsButton(cell: HNBStoryTableViewCell)
+    
+}
+
 class HNBStoryTableViewCell: UITableViewCell {
     
     static let nibName = "HNBStoryTableViewCell"
@@ -17,6 +23,8 @@ class HNBStoryTableViewCell: UITableViewCell {
     @IBOutlet weak var scoreLabel: UILabel!
     @IBOutlet weak var commentsLabel: UILabel!
     @IBOutlet weak var separatorWidthConstraint: NSLayoutConstraint!
+    
+    var delegate: HNBStoryTableViewCellDelegate?
     
     override func awakeFromNib() {
         self.separatorWidthConstraint.constant = 0.5
@@ -32,6 +40,8 @@ class HNBStoryTableViewCell: UITableViewCell {
     }
     
     @IBAction func commentsButtonPressed(sender: UIButton) {
-        // Show comments view
+        if let delegate = self.delegate {
+            delegate.storyCellDidPressCommentsButton(self)
+        }
     }
 }
